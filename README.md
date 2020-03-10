@@ -22,12 +22,12 @@ class MyConfigProvider {
     public function __invoke(): array
     {
         return [
-             \DannyMeyer\Di\Container::CONFIG_DEPENDENCIES => [
-                 \DannyMeyer\Di\Container::CONFIG_FACTORIES => [
-                     MyClass::class => \Laminas\ServiceManager\Factory\InvokableFactory::class,
-                 ],
-             ]
-         ];
+            \DannyMeyer\Di\Container::CONFIG_DEPENDENCIES => [
+                \DannyMeyer\Di\Container::CONFIG_FACTORIES => [
+                    MyClass::class => \Laminas\ServiceManager\Factory\InvokableFactory::class,
+                ],
+            ]
+        ];
     }
 }
 ```
