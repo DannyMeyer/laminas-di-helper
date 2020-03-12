@@ -33,7 +33,10 @@
     "scripts": {
         "check-codestyle": [
             "cd vendor/bin && ecs check ../../src --set psr12",
-            "cd vendor/bin && ecs check ../../tests --set psr12"
+            "cd vendor/bin && ecs check ../../test --set psr12"
+        ],
+        "check-tests": [
+            "cd vendor/bin && phpunit -c ../../config/phpunit.xml"
         ]
     }
 }
